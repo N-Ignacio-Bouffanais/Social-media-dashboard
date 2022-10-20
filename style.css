@@ -38,7 +38,7 @@ main .upper-container{
     background-color: var(--Very-Dark-Blue-Top-BG-Pattern);
     border-radius: 0 0 4rem 4rem;
     height: 20rem;
-    padding: 4rem 10rem 5rem 10rem;
+    padding: 4rem 10vw 5rem 10vw;
     display: flex;
     justify-content: space-between;
 }
@@ -102,11 +102,40 @@ input:checked + .slider:before {
   -ms-transform: translateX(2.5rem);
   transform: translateX(2.5rem);
 }
-/* Rounded sliders */
+input:checked + .slider:before{
+    background-color: white;
+}
 .slider.round {
   border-radius: 1.4rem;
 }
-
 .slider.round:before {
   border-radius: 50%;
+}
+main .lower-container{
+    padding: 12rem 10vw;
+}
+main .content-container{
+    display: grid;
+    row-gap: 2rem;
+    column-gap: 3rem;
+    grid-auto-rows: 15rem;
+    grid-template-columns: repeat(auto-fill, minmax(20rem,1fr));
+}
+main .lower-container h2{
+    font-size: 2.2rem;
+    margin: 3rem 0;
+}
+main .lower-container .card{
+    background-color: var(--Dark-Desaturated-Blue-Card-BG);
+    border-radius: 1rem;
+    padding: 2.2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+main .lower-container .card h3{
+    color: var(--Desaturated-Blue-Text);
+}
+main .lower-container .card p{
+    font-size: 2.2rem;
+    font-weight: 600;
 }
