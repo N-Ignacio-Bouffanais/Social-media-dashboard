@@ -112,13 +112,13 @@ input:checked + .slider:before{
   border-radius: 50%;
 }
 main .lower-container{
-    padding: 12rem 10vw;
+    padding: 15rem 10vw 5rem;
 }
 main .content-container{
     display: grid;
     row-gap: 2rem;
     column-gap: 3rem;
-    grid-auto-rows: 15rem;
+    grid-auto-rows: 12rem;
     grid-template-columns: repeat(auto-fill, minmax(20rem,1fr));
 }
 main .lower-container h2{
@@ -127,15 +127,66 @@ main .lower-container h2{
 }
 main .lower-container .card{
     background-color: var(--Dark-Desaturated-Blue-Card-BG);
-    border-radius: 1rem;
-    padding: 2.2rem;
+    border-radius: 0.5rem;
+    padding: 2.5rem 0 2.2rem 2.2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: space-between;
 }
 main .lower-container .card h3{
     color: var(--Desaturated-Blue-Text);
+    font-size: 1.3rem;
+    padding: 0.3rem;
 }
 main .lower-container .card p{
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     font-weight: 600;
 }
+main .lower-container img{
+  padding: 0 0 0 5vw;
+}
+main .percentage{
+  padding: 1rem 0 0 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+main .increased{
+  color: var(--Lime-Green);
+  
+}
+main .decreased{
+  color: var(--Bright-Red);
+}
+main .middle-container{
+    padding: 0 10vw;
+    display: grid;
+    gap: 3rem;
+    grid-auto-rows: 18rem;
+    grid-template-columns: repeat(auto-fill, minmax(20rem,1fr));
+}
+main .middle-container .card{
+  border-radius: 0.7rem;
+  background-color: var(--Dark-Desaturated-Blue-Card-BG);
+  padding: 2rem;
+  text-align: center;
+}
+main .middle-container .card .title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .middle-container .card .title h3{
+  margin: 1rem;
+  color: var(--Desaturated-Blue-Text);
+}
+main .middle-container .card h4{
+  font-size: 4rem;
+}
+main .middle-container .card p{
+  color: var(--Desaturated-Blue-Text);
+  font-size: 1.4rem;
+  letter-spacing: 0.4rem;
+  font-weight: 300;
+}
+
