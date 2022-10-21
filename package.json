@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/N-Ignacio-Bouffanais/Social-media-dashboard-with-theme-switcher.git"
+    "url": "git+https://github.com/N-Ignacio-Bouffanais/Social-media-dashboard.git"
   },
   "keywords": [
     "CSS-grid",
@@ -18,9 +18,9 @@
   "author": "Nicolas Bouffanais",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/N-Ignacio-Bouffanais/Social-media-dashboard-with-theme-switcher/issues"
+    "url": "https://github.com/N-Ignacio-Bouffanais/Social-media-dashboard/issues"
   },
-  "homepage": "https://github.com/N-Ignacio-Bouffanais/Social-media-dashboard-with-theme-switcher#readme",
+  "homepage": "https://github.com/N-Ignacio-Bouffanais/Social-media-dashboard#readme",
   "devDependencies": {
     "gh-pages": "4.0.0"
   }
