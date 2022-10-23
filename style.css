@@ -1,0 +1,214 @@
+:root {
+  --Lime-Green: hsl(163, 72%, 41%);
+  --Bright-Red: hsl(356, 69%, 56%);
+  --Facebook: hsl(208, 92%, 53%);
+  --Twitter: hsl(203, 89%, 53%);
+  --Instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+  --YouTube: hsl(348, 97%, 39%);
+  /*Dark Theme*/
+  --Very-Dark-Blue-BG: hsl(230, 17%, 14%);
+  --Very-Dark-Blue-Top-BG-Pattern: hsl(232, 19%, 15%);
+  --Dark-Desaturated-Blue-Card-BG: hsl(228, 28%, 20%);
+  --Desaturated-Blue-Text: hsl(228, 34%, 66%);
+  --White-Text: hsl(0, 0%, 100%);
+
+  /*Light theme*/
+  --White-BG: hsl(0, 0%, 100%);
+  --Top-BG-Pattern: hsl(225, 100%, 98%);
+  --Card-BG: hsl(227, 47%, 96%);
+  --Dark-Grayish-Blue-Text: hsl(228, 12%, 44%);
+  --Very-Dark-Blue-Text-: hsl(230, 17%, 14%);
+}
+
+html {
+  font-size: 62.5%;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: var(--White-Text);
+  font-family: "Inter", sans-serif;
+  background: rgb(25, 31, 64);
+  background: linear-gradient(
+    180deg,
+    rgba(25, 31, 64, 1) 0%,
+    rgba(25, 31, 64, 1) 24%,
+    rgba(17, 20, 42, 1) 24%,
+    rgba(17, 20, 42, 1) 100%
+  );
+}
+.upper-container {
+  color: var(--White-Text);
+  border-radius: 0 0 3rem 3rem;
+}
+.upper-content {
+  padding: 4rem 10vw 5rem 10vw;
+  display: flex;
+  justify-content: space-between;
+}
+.left-content h1 {
+  font-size: 2.8rem;
+}
+.left-content p {
+  color: var(--Desaturated-Blue-Text);
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.right-content p {
+  color: var(--White-Text);
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 0.4rem 1rem;
+}
+.right-content {
+  display: flex;
+  padding: 1rem;
+}
+.right-content .switch {
+  position: relative;
+  display: inline-block;
+  width: 5rem;
+  height: 2.4rem;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--Lime-Green);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.8rem;
+  width: 1.8rem;
+  left: 0.4rem;
+  bottom: 0.3rem;
+  background-color: rgb(53, 53, 53);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+input:checked + .slider {
+  background-color: var(--Lime-Green);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(1.9vw);
+  -ms-transform: translateX(1.9vw);
+  transform: translateX(1.9vw);
+}
+input:checked + .slider:before {
+  background-color: white;
+}
+.slider.round {
+  border-radius: 1.4rem;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+.cards-container {
+  padding: 0 10vw;
+  display: grid;
+  gap: 3rem;
+  grid-auto-rows: 18rem;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+}
+.cards-container .card {
+  border-radius: 0.7rem;
+  background-color: var(--Dark-Desaturated-Blue-Card-BG);
+  padding: 2rem;
+  text-align: center;
+}
+.cards-container .card .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cards-container .card .title h3 {
+  margin: 1rem;
+  color: var(--Desaturated-Blue-Text);
+}
+.cards-container .card h4 {
+  font-size: 4rem;
+}
+.cards-container .card p {
+  color: var(--Desaturated-Blue-Text);
+  font-size: 1.4rem;
+  letter-spacing: 0.4rem;
+  font-weight: 300;
+}
+
+/*lower container*/
+.lower-container {
+  padding: 2rem 10vw 5rem;
+}
+.content-container {
+  display: grid;
+  row-gap: 2rem;
+  column-gap: 3rem;
+  grid-auto-rows: 12rem;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+}
+.lower-container h2 {
+  font-size: 2.2rem;
+  margin: 3rem 0;
+}
+.lower-container .card {
+  background-color: var(--Dark-Desaturated-Blue-Card-BG);
+  border-radius: 0.5rem;
+  padding: 2.5rem 0 2.2rem 2.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: space-between;
+}
+.lower-container .card h3 {
+  color: var(--Desaturated-Blue-Text);
+  font-size: 1.3rem;
+  padding: 0.3rem;
+}
+.lower-container .card p {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+.lower-container img {
+  padding: 0 0 0 5vw;
+}
+.percentage {
+  padding: 1rem 0 0 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.increased {
+  color: var(--Lime-Green);
+}
+.decreased {
+  color: var(--Bright-Red);
+}
+footer .attribution{
+    display: flex;
+    padding: 3rem 10vw;
+    text-align: center;
+    margin: 0 auto;
+}
+footer p{
+    font-size: 1.5rem;
+    color: white;
+}
+.attribution a{
+    color: var(--Lime-Green);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
