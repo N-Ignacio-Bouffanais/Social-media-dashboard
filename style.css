@@ -3,18 +3,14 @@
   --Bright-Red: hsl(356, 69%, 56%);
   --Facebook: hsl(208, 92%, 53%);
   --Twitter: hsl(203, 89%, 53%);
-  --Instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+  --Instagram: linear-gradient(rgb(255, 206, 115),rgb(216, 56, 168));
   --YouTube: hsl(348, 97%, 39%);
   /*Dark Theme*/
-  --Very-Dark-Blue-BG: hsl(230, 17%, 14%);
-  --Very-Dark-Blue-Top-BG-Pattern: hsl(232, 19%, 15%);
   --Dark-Desaturated-Blue-Card-BG: hsl(228, 28%, 20%);
   --Desaturated-Blue-Text: hsl(228, 34%, 66%);
   --White-Text: hsl(0, 0%, 100%);
 
   /*Light theme*/
-  --White-BG: hsl(0, 0%, 100%);
-  --Top-BG-Pattern: hsl(225, 100%, 98%);
   --Card-BG: hsl(227, 47%, 96%);
   --Dark-Grayish-Blue-Text: hsl(228, 12%, 44%);
   --Very-Dark-Blue-Text-: hsl(230, 17%, 14%);
@@ -41,7 +37,6 @@ body {
   );
 }
 .upper-container {
-  color: var(--White-Text);
   border-radius: 0 0 3rem 3rem;
 }
 .upper-content {
@@ -125,7 +120,7 @@ input:checked + .slider:before {
   grid-auto-rows: 18rem;
   grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
 }
-.cards-container .card {
+.cards-container .card{
   border-radius: 0.7rem;
   background-color: var(--Dark-Desaturated-Blue-Card-BG);
   padding: 2rem;
@@ -148,6 +143,22 @@ input:checked + .slider:before {
   font-size: 1.4rem;
   letter-spacing: 0.4rem;
   font-weight: 300;
+  border-top-width: 0.3rem;
+}
+.card:hover{
+  background-color: rgb(44, 44, 68);
+}
+.cards-container .blue{
+  border-top-color: var(--Facebook);
+  border-top-style: outset;
+}
+.cards-container .instagram{
+  border-top-color: burlywood;
+  border-top-style: outset;
+}
+.cards-container .youtube{
+  border-top-color: var(--YouTube);
+  border-top-style: outset;
 }
 
 /*lower container*/
@@ -168,7 +179,7 @@ input:checked + .slider:before {
 .lower-container .card {
   background-color: var(--Dark-Desaturated-Blue-Card-BG);
   border-radius: 0.5rem;
-  padding: 2.5rem 0 2.2rem 2.2rem;
+  padding: 2.5rem 2rem 2.2rem 2.2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -190,6 +201,13 @@ input:checked + .slider:before {
   padding: 1rem 0 0 0;
   font-size: 1.2rem;
   font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.percentage img{
+  height: 0.4rem;
+  margin: 0 0.5rem;
 }
 .increased {
   color: var(--Lime-Green);
@@ -199,11 +217,11 @@ input:checked + .slider:before {
 }
 footer .attribution{
     display: flex;
-    padding: 3rem 10vw;
+    padding: 5rem 10vw 3rem;
     text-align: center;
     margin: 0 auto;
 }
-footer p{
+.attribution p{
     font-size: 1.5rem;
     color: white;
 }
@@ -211,4 +229,35 @@ footer p{
     color: var(--Lime-Green);
     text-decoration: none;
     font-size: 1.5rem;
+}
+
+/*light-mode*/
+.light-mode{
+  color: var(--Very-Dark-Blue-Text-);
+  background: rgb(248,249,255);
+  background: linear-gradient(180deg, rgba(248,249,255,1) 0%, rgba(248,249,255,1) 30%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 100%);
+}
+.light-mode .left-content p{
+  color: var(--Dark-Grayish-Blue-Text);
+}
+.light-mode .right-content p{
+  color: var(--Dark-Grayish-Blue-Text);
+}
+.light-mode .card{
+  background-color: var(--Card-BG);
+}
+.light-mode .card:hover{
+  background-color: rgb(214, 214, 214);
+}
+.light-mode .card .title h3{
+  color: var(--Dark-Grayish-Blue-Text);
+}
+.light-mode .card p{
+  color: var(--Dark-Grayish-Blue-Text);
+}
+.light-mode .lower-container .card h3{
+  color: var(--Dark-Grayish-Blue-Text);
+}
+.light-mode .attribution p{
+  color: var(--Very-Dark-Blue-Text-);
 }
