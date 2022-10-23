@@ -29,12 +29,14 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![dark-theme](./images/dark-theme.JPG)
+![light-theme](./images/light-theme.JPG)
+![movile](./images/movile-design.JPG)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/N-Ignacio-Bouffanais/Social-media-dashboard)
+- Live Site URL: [Add live site URL here](https://n-ignacio-bouffanais.github.io/Social-media-dashboard/)
 
 ## My process
 
@@ -45,20 +47,24 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+- linear-gradient
+- css-grid-auto-fill
 
 ### What I learned
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.cards-container {
+  padding: 0 10vw;
+  display: grid;
+  gap: 3rem;
+  grid-auto-rows: 18rem;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
 }
 ```
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+function myFunction() {
+    var element = document.body
+    element.classList.toggle("light-mode")
 }
 ```
 
