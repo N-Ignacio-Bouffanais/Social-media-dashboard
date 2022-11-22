@@ -1,7 +1,7 @@
 {
   "name": "social-media-dashboard",
   "version": "1.0.0",
-  "description": "This is a solution to the [Social media dashboard with theme switcher challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
+  "description": "This is a solution to the [Social media dashboard with theme switcher challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H). Also this project was built with css grid, flexbox, and semantic Ui and designed by Nicolas Bouffanais",
   "main": "index.js",
   "scripts": {
     "deploy": "gh-pages -d ."
